@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/emotion_love"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/emotion_love" />
+    <item
+        android:id="@+id/emotion_joy"
+        android:title="@string/emotion_joy" />
+    <item
+        android:id="@+id/emotion_surprise"
+        android:title="@string/emotion_surprise" />
+    <item
+        android:id="@+id/emotion_anger"
+        android:title="@string/emotion_anger" />
+    <item
+        android:id="@+id/emotion_sadness"
+        android:title="@string/emotion_sadness" />
+    <item
+        android:id="@+id/emotion_fear"
+        android:title="@string/emotion_fear" />
+</menu>

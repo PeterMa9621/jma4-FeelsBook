@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">jma4-FeelsBook</string>
+    <string name="emotion_love">Love</string>
+    <string name="emotion_joy">Joy</string>
+    <string name="emotion_surprise">Surprise</string>
+    <string name="emotion_anger">Anger</string>
+    <string name="emotion_sadness">Sadness</string>
+    <string name="emotion_fear">Fear</string>
+    <string name="button_record">Record Today\'s Emotion</string>
+    <string name="edit_comment_text">Edit your comment\:</string>
+    <string name="edit_emotion_text">Edit your emotion\:</string>
+</resources>
