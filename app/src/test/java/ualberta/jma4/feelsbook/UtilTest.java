@@ -28,7 +28,7 @@ public class UtilTest
         EmotionList testList = (EmotionList) Util.readObjectFromFile("test.txt");
 
         Emotion testEmotion = testList.getEmotion(1);
-        assertTrue("testEmotion is not equal to EmotionA", testEmotion.getEmotion().equals(emotionA.getEmotion()));
+        assertTrue("testEmotion is not equal to EmotionA", testEmotion.getFeeling().equals(emotionA.getFeeling()));
         testEmotion = testList.getEmotion(2);
         assertTrue("testEmotion is not equal to EmotionB", testEmotion.getComment().equals("I am happy now!"));
     }

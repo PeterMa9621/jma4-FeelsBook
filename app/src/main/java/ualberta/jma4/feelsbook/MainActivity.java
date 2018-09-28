@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         if(DataController.getEmotionList().getSize()==0)
             latest_emotion_text.setText("I haven't recorded any feeling yet!");
         else
-            latest_emotion_text.setText("My latest emotion is " + DataController.getEmotionList().getEmotion(DataController.getEmotionList().getSize()).getEmotion().toString());
+            latest_emotion_text.setText("My latest feeling is " + DataController.getEmotionList().getEmotion(DataController.getEmotionList().getSize()).getFeeling().toString());
 
         DataController.getEmotionList().addListener(1, new Listener() {
             @Override
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 if(DataController.getEmotionList().getSize()==0)
                     latest_emotion_text.setText("I haven't recorded any feeling yet!");
                 else
-                    latest_emotion_text.setText("My latest emotion is " + DataController.getEmotionList().getEmotion(DataController.getEmotionList().getSize()).getEmotion().toString());
+                    latest_emotion_text.setText("My latest feeling is " + DataController.getEmotionList().getEmotion(DataController.getEmotionList().getSize()).getFeeling().toString());
                 DataController.saveEmotionList(getApplicationContext());
             }
         });
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
         for(Emotion e:emotionList.getList())
         {
-            num.put(e.getEmotion(), num.get(e.getEmotion())+1);
+            num.put(e.getFeeling(), num.get(e.getFeeling())+1);
         }
 
         return num;

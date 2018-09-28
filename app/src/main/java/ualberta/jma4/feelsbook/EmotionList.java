@@ -81,7 +81,7 @@ public class EmotionList implements Serializable
     {
         if(emotionList.contains(emotion))
         {
-            emotion.setEmotion(feeling);
+            emotion.setFeeling(feeling);
             notifyListener();
         }
     }

@@ -30,7 +30,7 @@ public class EmotionAdapter extends ArrayAdapter
         TextView text_comment = view.findViewById(R.id.text_comment);
         TextView text_date = view.findViewById(R.id.edit_text_date);
 
-        text_emotion.setText(emotion.getEmotion().toString());
+        text_emotion.setText(emotion.getFeeling().toString());
         if(emotion.getComment().equals(""))
             //text_comment.setVisibility(View.INVISIBLE);
             text_comment.setText("No Comments");

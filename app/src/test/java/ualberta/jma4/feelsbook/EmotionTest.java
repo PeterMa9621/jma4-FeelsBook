@@ -14,13 +14,13 @@ public class EmotionTest {
     public void EmotionTest()
     {
         Emotion emotion = new Emotion(Feeling.Anger);
-        assertTrue("Feeling is not anger!", emotion.getEmotion().equals(Feeling.Anger));
+        assertTrue("Feeling is not anger!", emotion.getFeeling().equals(Feeling.Anger));
         String comment = "I was very Anger!";
         emotion.setComment(comment);
         assertTrue("Comment is not correct!", emotion.getComment().equals(comment));
         System.out.print(emotion.getDateString() + "\n");
-        System.out.print(emotion.getEmotion().toString());
+        System.out.print(emotion.getFeeling().toString());
         emotion.setEmotion(Feeling.Joy);
-        assertTrue("Feeling is not Joy!", emotion.getEmotion().equals(Feeling.Joy));
+        assertTrue("Feeling is not Joy!", emotion.getFeeling().equals(Feeling.Joy));
     }
 }

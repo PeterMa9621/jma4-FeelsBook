@@ -16,10 +16,6 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import org.feezu.liuli.timeselector.TimeSelector;
-import org.w3c.dom.Text;
-
-import java.sql.Time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,13 +58,13 @@ public class EditRecordActivity extends AppCompatActivity {
         date = current_emotion.getDateString();
         updateDate(text_date);
 
-        String str = "Current emotion is: " + current_emotion.getEmotion().toString();
+        String str = "Current emotion is: " + current_emotion.getFeeling().toString();
 
         text_current_emotion.setText(str);
 
         EditText editText = findViewById(R.id.edit_text_comment);
 
-        prev_emotion = current_emotion.getEmotion();
+        prev_emotion = current_emotion.getFeeling();
         prev_comment = current_emotion.getComment();
         editText.setText(prev_comment);
 
@@ -84,7 +80,7 @@ public class EditRecordActivity extends AppCompatActivity {
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinner.setAdapter(arrayAdapter);
-        spinner.setSelection(list.indexOf(current_emotion.getEmotion().toString()), true);
+        spinner.setSelection(list.indexOf(current_emotion.getFeeling().toString()), true);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

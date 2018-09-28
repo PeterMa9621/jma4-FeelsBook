@@ -6,21 +6,21 @@ import java.util.Date;
 
 public class Emotion implements Serializable
 {
-    private Feeling emotion;
+    private Feeling feeling;
     private String comment;
     private Date date;
     private int id;
 
-    public Emotion(Feeling emotion)
+    public Emotion(Feeling feeling)
     {
-        this.emotion = emotion;
+        this.feeling = feeling;
         date = new Date();
         comment = null;
     }
 
-    public Feeling getEmotion()
+    public Feeling getFeeling()
     {
-        return emotion;
+        return feeling;
     }
 
     public String getComment()
@@ -47,9 +47,9 @@ public class Emotion implements Serializable
         comment = newComment;
     }
 
-    public void setEmotion(Feeling newEmotion)
+    public void setFeeling(Feeling newFeeling)
     {
-        emotion = newEmotion;
+        feeling = newFeeling;
     }
 
     public int getID()
@@ -69,7 +69,7 @@ public class Emotion implements Serializable
 
     public Emotion clone()
     {
-        Emotion newEmotion = new Emotion(emotion);
+        Emotion newEmotion = new Emotion(feeling);
         newEmotion.setComment(comment);
         newEmotion.setID(id);
         newEmotion.setDate(date);
