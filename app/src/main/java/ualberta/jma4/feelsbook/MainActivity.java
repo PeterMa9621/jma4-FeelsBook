@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                     EditText comment_text = findViewById(R.id.comment_text);
                     comment_text.setText("");
+                    ViewHistory(view);
                 }
         }
     }
