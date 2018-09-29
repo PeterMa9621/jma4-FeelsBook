@@ -15,8 +15,6 @@ import android.widget.Toast;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Feeling current_feeling = null;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -50,30 +48,34 @@ public class MainActivity extends AppCompatActivity {
     // The method is in the listener of the add button
     public void onClick(View view)
     {
-        switch (view.getId())
+        Feeling current_feeling = null;
+        if (view.getId()==R.id.button_love)
+            current_feeling = Feeling.Love;
+        else if(view.getId()==R.id.button_joy)
+            current_feeling = Feeling.Joy;
+        else if(view.getId()==R.id.button_surprise)
+            current_feeling = Feeling.Surprise;
+        else if(view.getId()==R.id.button_anger)
+            current_feeling = Feeling.Anger;
+        else if(view.getId()==R.id.button_sadness)
+            current_feeling = Feeling.Sadness;
+        else if(view.getId()==R.id.button_fear)
+            current_feeling = Feeling.Fear;
+
+        if(current_feeling==null)
+            Toast.makeText(MainActivity.this, "You haven't set your feeling yet!", Toast.LENGTH_SHORT).show();
+        else
         {
-            case R.id.button_add:
-                if(current_feeling==null)
-                    Toast.makeText(MainActivity.this, "You haven't set your feeling yet!", Toast.LENGTH_SHORT).show();
-                else
-                {
-                    String feeling = current_feeling.toString();
-                    int id = CreateEmotion(current_feeling);
-                    Toast.makeText(MainActivity.this, "Recorded!", Toast.LENGTH_SHORT).show();
-                    TextView latest_emotion_text = findViewById(R.id.latest_emotion);
-                    latest_emotion_text.setText("My latest emotion is " + feeling);
+            String feeling = current_feeling.toString();
+            int id = CreateEmotion(current_feeling);
+            Toast.makeText(MainActivity.this, "Recorded!", Toast.LENGTH_SHORT).show();
+            TextView latest_emotion_text = findViewById(R.id.latest_emotion);
+            latest_emotion_text.setText("My latest emotion is " + feeling);
 
-                    TextView feeling_record = findViewById(R.id.feeling_record);
-                    feeling_record.setText("");
-
-                    EditText comment_text = findViewById(R.id.comment_text);
-                    comment_text.setText("");
-
-                    // pass the new emotion's id to the history activity to allow user to add an optional comment
-                    Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-                    intent.putExtra("newEmotionID", id);
-                    startActivity(intent);
-                }
+            // pass the new emotion's id to the history activity to allow user to add an optional comment
+            Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+            intent.putExtra("newEmotionID", id);
+            startActivity(intent);
         }
     }
 
@@ -125,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Used to show the menu of feelings.
     // The method is in the listener of Feeling button
+    /*
     public void ShowEmotionMenu(View view)
     {
         final PopupMenu popupMenu = new PopupMenu(this, view);
@@ -146,19 +149,14 @@ public class MainActivity extends AppCompatActivity {
 
         popupMenu.show();
     }
+    */
 
     // Used to create a new emotion
     public int CreateEmotion(Feeling feeling)
     {
         Emotion emotion = new Emotion(feeling);
-        EditText comment_text = findViewById(R.id.comment_text);
-        String comment = comment_text.getText().toString();
-        if(!comment.equals(""))
-            emotion.setComment(comment);
 
         DataController.addEmotion(emotion);
-
-        current_feeling = null;
 
         return emotion.getID();
     }
