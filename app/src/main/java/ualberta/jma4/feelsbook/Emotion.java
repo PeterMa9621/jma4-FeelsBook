@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/*
+    Class Emotion is used to save one record that includes the
+    user's feeling, comment, the date of the record and an unique id of the record.
+ */
 public class Emotion implements Serializable
 {
     private Feeling feeling;
@@ -67,6 +71,7 @@ public class Emotion implements Serializable
         date = newDate;
     }
 
+    @Override
     public Emotion clone()
     {
         Emotion newEmotion = new Emotion(feeling);

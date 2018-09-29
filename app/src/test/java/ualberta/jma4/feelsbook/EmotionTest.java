@@ -4,10 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+/*
+    Used to test if the class Emotion works well
  */
 public class EmotionTest {
     @Test
@@ -20,7 +18,7 @@ public class EmotionTest {
         assertTrue("Comment is not correct!", emotion.getComment().equals(comment));
         System.out.print(emotion.getDateString() + "\n");
         System.out.print(emotion.getFeeling().toString());
-        emotion.setEmotion(Feeling.Joy);
+        emotion.setFeeling(Feeling.Joy);
         assertTrue("Feeling is not Joy!", emotion.getFeeling().equals(Feeling.Joy));
     }
 }

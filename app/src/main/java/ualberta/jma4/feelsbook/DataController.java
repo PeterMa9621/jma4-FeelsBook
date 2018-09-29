@@ -3,10 +3,15 @@ package ualberta.jma4.feelsbook;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+/*
+    Class DataController is used to store an unique EmotionList. In the meantime,
+    the class provides some basic control methods. It also contains save and load
+    methods that are used to keep persistent.
+ */
 public class DataController
 {
     private static EmotionList emotionList = null;
-    static String preFile = "emotionList";
+    private static String preFile = "emotionList";
 
     static public EmotionList getEmotionList()
     {
@@ -29,13 +34,13 @@ public class DataController
     {
         SharedPreferences setting = context.getSharedPreferences(preFile, Context.MODE_PRIVATE);
 
-        Util.saveObjectToSharepreference(setting, emotionList, preFile);
+        Util.saveObjectToSharedPreference(setting, emotionList, preFile);
     }
 
     static void loadEmotionList(Context context)
     {
         SharedPreferences setting = context.getSharedPreferences(preFile, Context.MODE_PRIVATE);
-        EmotionList list = (EmotionList) Util.loadObjectFromSharepreference(setting, preFile);
+        EmotionList list = (EmotionList) Util.loadObjectFromSharedPreference(setting, preFile);
         if(list==null)
             emotionList = new EmotionList();
         else

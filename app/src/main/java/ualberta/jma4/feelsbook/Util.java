@@ -1,6 +1,5 @@
 package ualberta.jma4.feelsbook;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Base64;
 
@@ -13,6 +12,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+/*
+    Class Util has some static methods that are used to save object to file and load object from file.
+    The idea of methods comes from the video https://www.youtube.com/watch?v=gmNfc6u1qk0
+ */
 public class Util
 {
     public static void writeObjectToFile(Object obj, String fileName)
@@ -58,14 +61,14 @@ public class Util
         return object;
     }
 
-    public static void saveObjectToSharepreference(SharedPreferences setting, Object object, String fileName)
+    public static void saveObjectToSharedPreference(SharedPreferences setting, Object object, String fileName)
     {
         SharedPreferences.Editor editor = setting.edit();
         editor.putString(fileName, convertObjectToString(object));
         editor.commit();
     }
 
-    public static Object loadObjectFromSharepreference(SharedPreferences setting, String fileName)
+    public static Object loadObjectFromSharedPreference(SharedPreferences setting, String fileName)
     {
         String str = setting.getString(fileName, null);
         if(str == null)

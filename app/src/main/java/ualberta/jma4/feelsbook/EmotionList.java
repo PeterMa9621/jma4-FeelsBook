@@ -11,6 +11,10 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 
+/*
+    Class EmotionList is used to store all emotions that the user recorded.
+    There are listeners to control to update views if the data is changed.
+ */
 public class EmotionList implements Serializable
 {
     protected ArrayList<Emotion> emotionList;
@@ -49,12 +53,7 @@ public class EmotionList implements Serializable
         if(emotion==null)
             throw new NullPointerException();
         emotionList.remove(emotion);
-        for(int i=id+1; i<=largest_id; i++)
-        {
-            emotion = getEmotion(i);
-            emotion.setID(emotion.getID()-1);
-        }
-        largest_id --;
+        sortEmotionList();
         notifyListener();
     }
 
@@ -123,38 +122,6 @@ public class EmotionList implements Serializable
         }
     }
 
-    private void exchangeEmotion(Emotion emotionA, Emotion emotionB)
-    {
-        //printDate(this);
-        int indexA = emotionList.indexOf(emotionA);
-        int indexB = emotionList.indexOf(emotionB);
-
-        int tempID = emotionA.getID();
-        emotionA.setID(emotionB.getID());
-        emotionB.setID(tempID);
-
-        /*
-        Emotion temp = emotionA.clone();
-        emotionA = emotionB.clone();
-        emotionB = temp;
-        */
-
-        emotionList.remove(indexA);
-        emotionList.add(indexA, emotionB);
-        emotionList.remove(indexB);
-        emotionList.add(indexB, emotionA);
-
-        //printDate(this);
-    }
-
-    private void printDate(EmotionList list)
-    {
-        for(Emotion e:list.getList())
-        {
-            System.out.print(e.getID() + ", " + e.getDateString() + "\n");
-        }
-    }
-
     public void notifyListener()
     {
         if(listeners==null)
@@ -165,6 +132,7 @@ public class EmotionList implements Serializable
         }
     }
 
+    // Used to clear all stored emotions
     public void clearData()
     {
         emotionList.clear();

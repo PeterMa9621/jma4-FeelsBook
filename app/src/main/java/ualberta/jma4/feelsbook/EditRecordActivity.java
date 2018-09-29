@@ -94,11 +94,13 @@ public class EditRecordActivity extends AppCompatActivity {
         });
     }
 
+    // Used to update the string that shows current date
     private void updateDate(TextView textView)
     {
         textView.setText("Current Date: " + date);
     }
 
+    // Used to init the date selector
     public void init_dateSelector(Button btn, final TextView textView)
     {
         Calendar calendar = Calendar.getInstance();
@@ -132,6 +134,8 @@ public class EditRecordActivity extends AppCompatActivity {
         });
     }
 
+    // Used to apply all changes of this record.
+    // The method is in the listener of apply button.
     public void apply(View view)
     {
         boolean changed = false;
