@@ -28,10 +28,10 @@ public class EmotionAdapter extends ArrayAdapter
         resourceId = resource;
     }
 
-    public EmotionAdapter(@NonNull Context context, int resource, List<Emotion> emotionList, int id) {
+    public EmotionAdapter(@NonNull Context context, int resource, List<Emotion> emotionList, int newEmotionId) {
         super(context, resource, emotionList);
         resourceId = resource;
-        newEmotionId = id;
+        this.newEmotionId = newEmotionId;
     }
 
     @NonNull

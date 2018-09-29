@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // The method is in the listener of the add button
+    // The method is in the listener of every feeling button
     public void onClick(View view)
     {
         Feeling current_feeling = null;
@@ -124,32 +124,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return str;
     }
-
-    // Used to show the menu of feelings.
-    // The method is in the listener of Feeling button
-    /*
-    public void ShowEmotionMenu(View view)
-    {
-        final PopupMenu popupMenu = new PopupMenu(this, view);
-        final TextView feeling_record = findViewById(R.id.feeling_record);
-
-        popupMenu.getMenuInflater().inflate(R.menu.main, popupMenu.getMenu());
-
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item)
-            {
-                Toast.makeText(MainActivity.this, "Record emotion " + item.getTitle().toString(), Toast.LENGTH_SHORT).show();
-                feeling_record.setText("My feeling for now is " + item.getTitle().toString());
-                current_feeling = Feeling.valueOf(item.getTitle().toString());
-                //CreateEmotion(Feeling.valueOf(item.getTitle().toString()));
-                return false;
-            }
-        });
-
-        popupMenu.show();
-    }
-    */
 
     // Used to create a new emotion
     public int CreateEmotion(Feeling feeling)
