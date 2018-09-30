@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -21,7 +22,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
+/**
+ *  Student Name: Jingyuan Ma
+ *  CCID: jma4
+ *  This software is created by Jingyuan Ma individually. No Collaborators.
+ */
 public class EditRecordActivity extends AppCompatActivity {
 
     private Feeling changedEmotion = null;
@@ -50,7 +55,7 @@ public class EditRecordActivity extends AppCompatActivity {
         // Init the Data
         TextView text_date = findViewById(R.id.edit_text_date);
 
-        init_dateSelector((Button) findViewById(R.id.button_change_date), text_date);
+        init_dateSelector((ImageButton) findViewById(R.id.button_change_date), text_date);
 
         TextView text_current_emotion = findViewById(R.id.edit_text_current_emotion);
 
@@ -101,7 +106,7 @@ public class EditRecordActivity extends AppCompatActivity {
     }
 
     // Used to init the date selector
-    public void init_dateSelector(Button btn, final TextView textView)
+    public void init_dateSelector(ImageButton btn, final TextView textView)
     {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(current_emotion.getDate());

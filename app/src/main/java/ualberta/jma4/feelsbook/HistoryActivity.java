@@ -15,7 +15,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+/**
+ *  Student Name: Jingyuan Ma
+ *  CCID: jma4
+ *  This software is created by Jingyuan Ma individually. No Collaborators.
+ */
 public class HistoryActivity extends AppCompatActivity {
     private EmotionAdapter emotionAdapter;
     @Override
