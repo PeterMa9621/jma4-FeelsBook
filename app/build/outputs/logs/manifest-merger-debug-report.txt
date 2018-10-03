@@ -1,0 +1,116 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+MERGED from [com.feezu.liuli:timeselector:1.1.4] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\timeselector-1.1.4.aar\ee9de08a64b1ea15d1e029d96719bed9\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d09d972dab828165ac76c569c90982bf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\10c8458a76a4cd23535508fd67c58226\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a491f8f0f32a16afe9f636bf249e3aeb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ba91b222a1feb5d56c82a386a04b9ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\97451a1ddfb0de19a9545902b18b3f59\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b4227d168a1c93cfbabb5694b77f586b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\30b104270fba77c94e0314b70561c26d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f350c953144ec2cf1b45820922271973\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\42bf94ebb53b75eb05ca6e526345d756\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d372467a6bc9314d63c67ce5166695c8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d7c721426ac089b7b5d53173daedab39\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bc0b3d4697c9247bd3207680d4531da\AndroidManifest.xml:17:1-22:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:5:5-21:19
+MERGED from [com.feezu.liuli:timeselector:1.1.4] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\timeselector-1.1.4.aar\ee9de08a64b1ea15d1e029d96719bed9\AndroidManifest.xml:11:5-15:19
+MERGED from [com.feezu.liuli:timeselector:1.1.4] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\timeselector-1.1.4.aar\ee9de08a64b1ea15d1e029d96719bed9\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\10c8458a76a4cd23535508fd67c58226\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\10c8458a76a4cd23535508fd67c58226\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:11:9-40
+activity#ualberta.jma4.feelsbook.MainActivity
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:16:27-74
+activity#ualberta.jma4.feelsbook.EditRecordActivity
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:19:9-56
+	android:name
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:19:19-53
+activity#ualberta.jma4.feelsbook.HistoryActivity
+ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:20:9-62
+	android:name
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml:20:19-50
+uses-sdk
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+MERGED from [com.feezu.liuli:timeselector:1.1.4] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\timeselector-1.1.4.aar\ee9de08a64b1ea15d1e029d96719bed9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.feezu.liuli:timeselector:1.1.4] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\timeselector-1.1.4.aar\ee9de08a64b1ea15d1e029d96719bed9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d09d972dab828165ac76c569c90982bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d09d972dab828165ac76c569c90982bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\10c8458a76a4cd23535508fd67c58226\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\10c8458a76a4cd23535508fd67c58226\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a491f8f0f32a16afe9f636bf249e3aeb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a491f8f0f32a16afe9f636bf249e3aeb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ba91b222a1feb5d56c82a386a04b9ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ba91b222a1feb5d56c82a386a04b9ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\97451a1ddfb0de19a9545902b18b3f59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\97451a1ddfb0de19a9545902b18b3f59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b4227d168a1c93cfbabb5694b77f586b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b4227d168a1c93cfbabb5694b77f586b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\30b104270fba77c94e0314b70561c26d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\30b104270fba77c94e0314b70561c26d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f350c953144ec2cf1b45820922271973\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f350c953144ec2cf1b45820922271973\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\42bf94ebb53b75eb05ca6e526345d756\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\42bf94ebb53b75eb05ca6e526345d756\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d372467a6bc9314d63c67ce5166695c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d372467a6bc9314d63c67ce5166695c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d7c721426ac089b7b5d53173daedab39\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d7c721426ac089b7b5d53173daedab39\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bc0b3d4697c9247bd3207680d4531da\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jma4\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bc0b3d4697c9247bd3207680d4531da\AndroidManifest.xml:20:5-44
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from G:\School Work\CMPUT\CMPUT301\Assignment1\jma4-FeelsBook\app\src\main\AndroidManifest.xml

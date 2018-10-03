@@ -1,0 +1,4 @@
+#Tue Oct 02 22:10:54 MDT 2018
+base.0=G\:\\School Work\\CMPUT\\CMPUT301\\Assignment1\\jma4-FeelsBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

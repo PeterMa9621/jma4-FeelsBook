@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Oct 02 22:10:54 MDT 2018
+0.baseType=DIRECTORY
+0.base=G\:\\School Work\\CMPUT\\CMPUT301\\Assignment1\\jma4-FeelsBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
