@@ -1,1 +1,1 @@
-# CMPUT301/FeelsBook
+# jma4-FeelsBook
