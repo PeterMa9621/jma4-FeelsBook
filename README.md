@@ -13,4 +13,4 @@ This application is tested working well in android 4.3 with API 18 and resolutio
 
 # Reference
 * Abram Hindle, Student Picker for Android: 7 Persistence, SharedPreferences and Serializable and Equals, https://www.youtube.com/watch?v=gmNfc6u1qk0, 2014-9-14, retrieved 2018-10-02
-* wyui004, images source, http://www.58pic.com/newpic/27298315.html
+* wyui004, free images source, http://www.58pic.com/newpic/27298315.html
