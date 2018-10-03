@@ -1,7 +1,7 @@
 # jma4-FeelsBook
 Assignment 1 of CMPUT 301.
 
-This application is tested well in android 4.3 with API 18 and resolution 768*1280.
+This application is tested working well in android 4.3 with API 18 and resolution 768*1280.
 
 # Collaborator
 * No Collaborators.
