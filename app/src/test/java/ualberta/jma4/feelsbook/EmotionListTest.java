@@ -6,6 +6,9 @@ import java.util.Date;
 
 import static org.junit.Assert.*;
 
+/*
+    Used to test if the class EmotionList works well
+ */
 public class EmotionListTest
 {
     @Test
@@ -52,7 +55,7 @@ public class EmotionListTest
         emotionList.removeEmotion(1);
         assertTrue("EmotionList'size should be 2!", emotionList.getSize()==2);
         assertTrue("emotionB's ID should be 1!", emotionB.getID()==1);
-        assertTrue("emotionC's ID should be 2!", emotionC.getID()==2);
+        assertTrue("emotionA's ID should be 2!", emotionA.getID()==2);
     }
 
     @Test
@@ -70,17 +73,17 @@ public class EmotionListTest
         emotionList.addEmotion(emotionD);
         emotionList.addEmotion(emotionE);
 
-        Date newDate = new Date(2018-1900, 9, 15);
-        emotionList.changeDate(emotionB, newDate);
+        Date newDate = new Date(2018-1900, 10-1, 15);
+        emotionList.setDate(emotionB, newDate);
 
         newDate = new Date(2018-1900, 9-1, 14);
-        emotionList.changeDate(emotionC, newDate);
+        emotionList.setDate(emotionC, newDate);
 
         newDate = new Date(2018-1900, 9-1, 15);
-        emotionList.changeDate(emotionD, newDate);
+        emotionList.setDate(emotionD, newDate);
 
-        assertTrue("emotionC's ID should be 1!", emotionC.getID()==1);
-        assertTrue("emotionD's ID should be 1!", emotionD.getID()==2);
-        assertTrue("emotionB's ID should be 5!", emotionB.getID()==5);
+        assertTrue("emotionC's ID should be 5!", emotionC.getID()==5);
+        assertTrue("emotionD's ID should be 4!", emotionD.getID()==4);
+        assertTrue("emotionB's ID should be 1!", emotionB.getID()==1);
     }
 }

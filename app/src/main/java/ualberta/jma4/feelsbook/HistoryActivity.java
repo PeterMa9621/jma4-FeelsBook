@@ -7,15 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+/**
+ *  Student Name: Jingyuan Ma
+ *  CCID: jma4
+ *  This software is created by Jingyuan Ma individually. No Collaborators.
+ */
 public class HistoryActivity extends AppCompatActivity {
-
+    private EmotionAdapter emotionAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +34,13 @@ public class HistoryActivity extends AppCompatActivity {
         final ArrayList<Emotion> list = emotionList.getList();
 
         final ListView listView = findViewById(R.id.emotion_list);
-        final EmotionAdapter emotionAdapter = new EmotionAdapter(this, R.layout.emotion_list, list);
+
+        Intent intent = getIntent();
+        int id = intent.getIntExtra("newEmotionID", -1);
+        if(id==-1)
+            emotionAdapter = new EmotionAdapter(this, R.layout.emotion_list, list);
+        else
+            emotionAdapter = new EmotionAdapter(this, R.layout.emotion_list, list, id);
 
         final TextView text_count1 = findViewById(R.id.text_count1);
         final TextView text_count2 = findViewById(R.id.text_count2);
@@ -86,8 +98,10 @@ public class HistoryActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
+    // Used to update the emotion counts
     private void update_text_count(TextView text_count1, TextView text_count2)
     {
         HashMap<Feeling, Integer> num = MainActivity.get_num_emotion(DataController.getEmotionList());
@@ -95,6 +109,7 @@ public class HistoryActivity extends AppCompatActivity {
         text_count2.setText(MainActivity.transform_to_string(num, 3, 5));
     }
 
+    // Used to clear all emotions
     public void delete_all(View view)
     {
         if(DataController.getEmotionList().getSize()==0)

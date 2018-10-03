@@ -8,6 +8,9 @@ import java.util.Date;
 
 import static org.junit.Assert.*;
 
+/*
+    Used to test if the class Util works well
+ */
 public class UtilTest
 {
     @Test
@@ -27,9 +30,9 @@ public class UtilTest
         Util.writeObjectToFile(emotionList, "test.txt");
         EmotionList testList = (EmotionList) Util.readObjectFromFile("test.txt");
 
-        Emotion testEmotion = testList.getEmotion(1);
+        Emotion testEmotion = testList.getEmotion(2);
         assertTrue("testEmotion is not equal to EmotionA", testEmotion.getFeeling().equals(emotionA.getFeeling()));
-        testEmotion = testList.getEmotion(2);
+        testEmotion = testList.getEmotion(1);
         assertTrue("testEmotion is not equal to EmotionB", testEmotion.getComment().equals("I am happy now!"));
     }
 

@@ -14,9 +14,12 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 
+/**
+ *  Student Name: Jingyuan Ma
+ *  CCID: jma4
+ *  This software is created by Jingyuan Ma individually. No Collaborators.
+ */
 public class MainActivity extends AppCompatActivity {
-
-    private Feeling current_feeling = null;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -47,31 +50,41 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // The method is in the listener of every feeling button
     public void onClick(View view)
     {
-        switch (view.getId())
+        Feeling current_feeling = null;
+        if (view.getId()==R.id.button_love)
+            current_feeling = Feeling.Love;
+        else if(view.getId()==R.id.button_joy)
+            current_feeling = Feeling.Joy;
+        else if(view.getId()==R.id.button_surprise)
+            current_feeling = Feeling.Surprise;
+        else if(view.getId()==R.id.button_anger)
+            current_feeling = Feeling.Anger;
+        else if(view.getId()==R.id.button_sadness)
+            current_feeling = Feeling.Sadness;
+        else if(view.getId()==R.id.button_fear)
+            current_feeling = Feeling.Fear;
+
+        if(current_feeling==null)
+            Toast.makeText(MainActivity.this, "You haven't set your feeling yet!", Toast.LENGTH_SHORT).show();
+        else
         {
-            case R.id.button_add:
-                if(current_feeling==null)
-                    Toast.makeText(MainActivity.this, "You haven't set your feeling yet!", Toast.LENGTH_SHORT).show();
-                else
-                {
-                    String feeling = current_feeling.toString();
-                    CreateEmotion(current_feeling);
-                    Toast.makeText(MainActivity.this, "Recorded!", Toast.LENGTH_SHORT).show();
-                    TextView latest_emotion_text = findViewById(R.id.latest_emotion);
-                    latest_emotion_text.setText("My latest emotion is " + feeling);
+            String feeling = current_feeling.toString();
+            int id = CreateEmotion(current_feeling);
+            Toast.makeText(MainActivity.this, "Recorded!", Toast.LENGTH_SHORT).show();
+            TextView latest_emotion_text = findViewById(R.id.latest_emotion);
+            latest_emotion_text.setText("My latest emotion is " + feeling);
 
-                    TextView feeling_record = findViewById(R.id.feeling_record);
-                    feeling_record.setText("");
-
-                    EditText comment_text = findViewById(R.id.comment_text);
-                    comment_text.setText("");
-                    ViewHistory(view);
-                }
+            // pass the new emotion's id to the history activity to allow user to add an optional comment
+            Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+            intent.putExtra("newEmotionID", id);
+            startActivity(intent);
         }
     }
 
+    // The method is used to delete the data stored in SharedPreferences.
     public static void clear_data(Context context, String preFile)
     {
         SharedPreferences setting = context.getSharedPreferences(preFile, Context.MODE_PRIVATE);
@@ -80,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
     }
 
+    // The method is used to count emotions
     public static HashMap<Feeling, Integer> get_num_emotion(EmotionList emotionList)
     {
         HashMap<Feeling, Integer> num = new HashMap<>();
@@ -96,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
         return num;
     }
 
+    // Used to transform the count emotions to string
     public static String transform_to_string(HashMap<Feeling, Integer> num, int start, int end)
     {
         String str = "";
@@ -115,40 +130,18 @@ public class MainActivity extends AppCompatActivity {
         return str;
     }
 
-    public void ShowEmotionMenu(View view)
-    {
-        final PopupMenu popupMenu = new PopupMenu(this, view);
-        final TextView feeling_record = findViewById(R.id.feeling_record);
-
-        popupMenu.getMenuInflater().inflate(R.menu.main, popupMenu.getMenu());
-
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item)
-            {
-                Toast.makeText(MainActivity.this, "Record emotion " + item.getTitle().toString(), Toast.LENGTH_SHORT).show();
-                feeling_record.setText("My feeling for now is " + item.getTitle().toString());
-                current_feeling = Feeling.valueOf(item.getTitle().toString());
-                //CreateEmotion(Feeling.valueOf(item.getTitle().toString()));
-                return false;
-            }
-        });
-
-        popupMenu.show();
-    }
-
-    public void CreateEmotion(Feeling feeling)
+    // Used to create a new emotion
+    public int CreateEmotion(Feeling feeling)
     {
         Emotion emotion = new Emotion(feeling);
-        EditText comment_text = findViewById(R.id.comment_text);
-        String comment = comment_text.getText().toString();
-        if(!comment.equals(""))
-            emotion.setComment(comment);
+
         DataController.addEmotion(emotion);
 
-        current_feeling = null;
+        return emotion.getID();
     }
 
+
+    // Used to jump to the activity of history
     public void ViewHistory(View view)
     {
         Intent intent = new Intent(this, HistoryActivity.class);

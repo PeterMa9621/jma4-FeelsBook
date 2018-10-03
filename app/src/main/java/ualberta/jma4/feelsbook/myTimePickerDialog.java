@@ -3,6 +3,9 @@ package ualberta.jma4.feelsbook;
 import android.app.TimePickerDialog;
 import android.content.Context;
 
+/*
+    The class is only used to remove the method onStop which is in TimePickerDialog.
+ */
 public class myTimePickerDialog extends TimePickerDialog
 {
     public myTimePickerDialog(Context context, OnTimeSetListener callBack,
