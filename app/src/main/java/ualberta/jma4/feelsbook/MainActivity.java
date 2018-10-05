@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -72,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             String feeling = current_feeling.toString();
-            int id = CreateEmotion(current_feeling);
+            int id = createEmotion(current_feeling);
             Toast.makeText(MainActivity.this, "Recorded!", Toast.LENGTH_SHORT).show();
             TextView latest_emotion_text = findViewById(R.id.latest_emotion);
             latest_emotion_text.setText("My latest emotion is " + feeling);
@@ -94,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // The method is used to count emotions
-    public static HashMap<Feeling, Integer> get_num_emotion(EmotionList emotionList)
+    public static HashMap<Feeling, Integer> getNumEmotion(EmotionList emotionList)
     {
         HashMap<Feeling, Integer> num = new HashMap<>();
         for(Feeling f:Feeling.values())
@@ -111,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Used to transform the count emotions to string
-    public static String transform_to_string(HashMap<Feeling, Integer> num, int start, int end)
+    public static String transformToString(HashMap<Feeling, Integer> num, int start, int end)
     {
         String str = "";
         int index = 0;
@@ -131,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Used to create a new emotion
-    public int CreateEmotion(Feeling feeling)
+    public int createEmotion(Feeling feeling)
     {
         Emotion emotion = new Emotion(feeling);
 
@@ -142,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // Used to jump to the activity of history
-    public void ViewHistory(View view)
+    public void viewHistory(View view)
     {
         Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);

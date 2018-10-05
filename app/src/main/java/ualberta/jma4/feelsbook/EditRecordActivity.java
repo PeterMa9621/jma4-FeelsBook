@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -55,7 +54,7 @@ public class EditRecordActivity extends AppCompatActivity {
         // Init the Data
         TextView text_date = findViewById(R.id.edit_text_date);
 
-        init_dateSelector((ImageButton) findViewById(R.id.button_change_date), text_date);
+        initDateSelector((ImageButton) findViewById(R.id.button_change_date), text_date);
 
         TextView text_current_emotion = findViewById(R.id.edit_text_current_emotion);
 
@@ -106,7 +105,7 @@ public class EditRecordActivity extends AppCompatActivity {
     }
 
     // Used to init the date selector
-    public void init_dateSelector(ImageButton btn, final TextView textView)
+    public void initDateSelector(ImageButton btn, final TextView textView)
     {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(current_emotion.getDate());

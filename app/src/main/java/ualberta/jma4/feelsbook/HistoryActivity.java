@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,7 +45,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         listView.setAdapter(emotionAdapter);
 
-        update_text_count(text_count1, text_count2);
+        updateTextCount(text_count1, text_count2);
 
         emotionList.addListener(2, new Listener()
         {
@@ -55,7 +53,7 @@ public class HistoryActivity extends AppCompatActivity {
             public void update()
             {
                 emotionAdapter.notifyDataSetChanged();
-                update_text_count(text_count1, text_count2);
+                updateTextCount(text_count1, text_count2);
             }
         });
 
@@ -102,15 +100,15 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     // Used to update the emotion counts
-    private void update_text_count(TextView text_count1, TextView text_count2)
+    private void updateTextCount(TextView text_count1, TextView text_count2)
     {
-        HashMap<Feeling, Integer> num = MainActivity.get_num_emotion(DataController.getEmotionList());
-        text_count1.setText(MainActivity.transform_to_string(num, 0, 2));
-        text_count2.setText(MainActivity.transform_to_string(num, 3, 5));
+        HashMap<Feeling, Integer> num = MainActivity.getNumEmotion(DataController.getEmotionList());
+        text_count1.setText(MainActivity.transformToString(num, 0, 2));
+        text_count2.setText(MainActivity.transformToString(num, 3, 5));
     }
 
     // Used to clear all emotions
-    public void delete_all(View view)
+    public void deleteAll(View view)
     {
         if(DataController.getEmotionList().getSize()==0)
             Toast.makeText(getApplicationContext(), "Nothing to delete!", Toast.LENGTH_SHORT).show();
